@@ -1,7 +1,7 @@
 # Responsive Events Website
 
 ## 🔗 Live Preview
-[Click here](https://your-netlify-link.netlify.app)
+https://eventfinder-1.netlify.app/
 
 ## 💻 Tech Stack
 - HTML5
