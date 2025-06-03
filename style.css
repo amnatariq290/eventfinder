@@ -1,0 +1,225 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/* General */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-image: url('22.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: black;
+  margin: 0;
+  padding: 0;
+}
+
+/* Hero section - text aligned left */
+.hero-section {
+  position: relative;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: hidden;
+  padding-left: 60px;
+  text-align: left;
+}
+
+.hero-section h1 {
+  font-family: 'Bebas Neue', sans-serif;
+  position: relative;
+  z-index: 2;
+  color: white;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.main-heading {
+  font-size: 8.5rem;
+  font-weight: normal;
+  letter-spacing: 1px;
+}
+
+.sub-heading {
+  font-size: 4.5rem;
+  font-weight: normal;
+  letter-spacing: 2px;
+  margin-top: 10px;
+}
+
+/* Featured Events Heading */
+#events h2 {
+  color: white;
+  font-weight: bold;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Horizontal Scroll Container */
+.event-scroll-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  scroll-behavior: smooth;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* Hide scrollbar */
+.event-scroll-container::-webkit-scrollbar {
+  display: none;
+}
+.event-scroll-container {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Event Card Styling */
+.event-card {
+  min-width: 300px;
+  background-color: #000;
+  color: #dddddd;
+  border: 1px solid #333;
+  padding: 20px;
+  border-radius: 10px;
+  flex-shrink: 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 8px rgba(233, 30, 99, 0.1);
+}
+
+.event-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(233, 30, 99, 0.4);
+}
+
+.event-card h5 {
+  color: #e91e63;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.event-card p {
+  color: #dddddd;
+  margin-bottom: 0.4rem;
+}
+
+.event-card p strong {
+  color: #03a9f4;
+}
+
+.btn-primary {
+  background-color: #e91e63;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #c2185b;
+}
+
+/* Navbar */
+.navbar {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  transition: background-color 0.3s ease;
+  box-shadow: none;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Navbar links - white text only */
+.navbar-nav .nav-link {
+  background-color: transparent !important;
+  color: white !important;
+  border: none !important;
+  margin-left: 10px;
+  padding: 6px 14px;
+  border-radius: 0;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #e91e63 !important;
+  background-color: transparent !important;
+}
+
+/* Footer */
+footer {
+  background-color: #111;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* Floating Button */
+.floating-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #e91e63;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 16px;
+  z-index: 999;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  animation: pulse 2s infinite;
+  transition: background-color 0.3s ease;
+}
+
+.floating-btn:hover {
+  background-color: #c2185b;
+}
+
+/* Pulse animation */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(233, 30, 99, 0.5);
+  }
+  70% {
+    transform: scale(1.05);
+    box-shadow: 0 0 0 10px rgba(233, 30, 99, 0);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(233, 30, 99, 0);
+  }
+}
+/* Horizontal scroll styling for events */
+#eventsContainer {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding-bottom: 10px;
+  scroll-behavior: smooth;
+}
+
+.event-card {
+  min-width: 300px;
+  flex: 0 0 auto;
+}
+/* Horizontal scroll container */
+.scroll-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding-bottom: 10px;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Each event card fixed width */
+.event-card {
+  min-width: 300px;
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+}
