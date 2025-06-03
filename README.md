@@ -1,29 +1,24 @@
-# EventFinder - Responsive Events Website
+# Responsive Events Website
 
-EventFinder is a modern, responsive web application that showcases upcoming events in a visually appealing horizontal scroll layout. Users can browse through featured events and search events by name in real-time.
+## 🔗 Live Preview
+[Click here](https://your-netlify-link.netlify.app)
 
-## Features
-
-- Responsive horizontal scrollable event cards
-- Search functionality filtering events by name
-- Clean and modern UI using Bootstrap 5 and Google Fonts
-- Floating "Get Notified" button (UI placeholder)
-- Accessible and mobile-friendly design
-
-## Technologies Used
-
+## 💻 Tech Stack
 - HTML5
-- CSS3 (Bootstrap 5)
-- JavaScript (Vanilla JS)
-- Google Fonts (Bebas Neue)
+- CSS3 / Bootstrap 5
+- JavaScript (Vanilla)
+- Hosted on Netlify
 
-## Demo
+## 🎯 Features
+- Responsive single-page layout
+- Featured event cards with details
+- Search bar to filter events (bonus)
+- Hover effects on cards
 
-[Live Demo Link]()
+## 🚀 How to Run
+1. Download or clone the repo.
+2. Open `index.html` in any browser.
+3. OR visit the live preview link.
 
-## Installation and Usage
-
-1. Clone this repository:
-
-   ```bash
-   git clone https://github.com/your-username/eventfinder.git
+## ✨ Extra Features
+- Search bar with dynamic filtering
