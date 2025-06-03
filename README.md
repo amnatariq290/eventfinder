@@ -1,4 +1,3 @@
-# eventfinder
 # EventFinder - Responsive Events Website
 
 EventFinder is a modern, responsive web application that showcases upcoming events in a visually appealing horizontal scroll layout. Users can browse through featured events and search events by name in real-time.
